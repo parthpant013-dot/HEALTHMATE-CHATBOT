@@ -188,7 +188,6 @@ rasa shell
 **Parth**
 
 
-If this helped you, please give it a ⭐!
 
 
 
