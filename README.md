@@ -54,7 +54,7 @@ healthmate-chatbot/
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 - **Backend:** Python 3.10, Rasa 3.6
 - **Frontend:** HTML, CSS, JavaScript
@@ -65,7 +65,7 @@ healthmate-chatbot/
 ---
 
 
-🏗 System Architecture & Logic
+System Architecture & Logic
 ------------------------------
 
 Understanding how data flows through HealthMate is key to understanding its intelligence.
@@ -104,7 +104,7 @@ To understand this project, look at these core files:
 
 ##  How to Run Locally
 
-### 1️⃣ Clone the repository
+### 1- Clone the repository
 
 ```bash
 git clone https://github.com/parthpant013-dot/healthmate-chatbot.git
@@ -113,7 +113,7 @@ cd healthmate-chatbot
 
 ---
 
-### 2️⃣ Create virtual environment (Python 3.10 required)
+### 2- Create virtual environment (Python 3.10 required)
 
 ```bash
 python3.10 -m venv venv
@@ -123,7 +123,7 @@ pip install -r backend/requirements.txt
 
 ---
 
-### 3️⃣ Train the chatbot model
+### 3- Train the chatbot model
 
 ```bash
 cd backend
@@ -132,7 +132,7 @@ rasa train
 
 ---
 
-### 4️⃣ Start backend servers
+### 4- Start backend servers
 
 **Terminal 1 – Action Server**
 ```bash
@@ -146,7 +146,7 @@ rasa run --enable-api --cors "*"
 
 ---
 
-### 5️⃣ Serve the frontend UI
+### 5- Serve the frontend UI
 
 ```bash
 cd ui/public
