@@ -6,6 +6,7 @@ __pycache__/
 # Rasa
 models/
 .cache/
+.rasa
 
 # OS / Editor
 .DS_Store
