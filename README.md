@@ -161,7 +161,7 @@ http://localhost:8000
 
 ---
 
-## 🧪 Testing
+## Testing
 
 You can also test the chatbot directly in terminal:
 
