@@ -1,0 +1,106 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+# Health-related rules for HealthMate (only non-conflicting ones)
+
+- rule: Greet the user
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Handle emergency situations immediately
+  steps:
+  - intent: emergency_help
+  - action: utter_emergency
+
+- rule: Respond to fever symptoms when standalone
+  steps:
+  - intent: symptom_fever
+  - action: utter_fever_advice
+
+- rule: Respond to cold/flu symptoms
+  steps:
+  - intent: symptom_cold_flu
+  - action: utter_cold_flu_advice
+
+- rule: Respond to stomach issues
+  steps:
+  - intent: symptom_stomach
+  - action: utter_stomach_advice
+
+- rule: Provide diet and nutrition guidance
+  steps:
+  - intent: diet_nutrition
+  - action: utter_diet_advice
+
+- rule: Provide exercise and fitness guidance
+  steps:
+  - intent: exercise_fitness
+  - action: utter_exercise_advice
+
+- rule: Handle mental health queries
+  steps:
+  - intent: mental_health
+  - action: utter_mental_health_support
+
+- rule: Handle sleep issues
+  steps:
+  - intent: sleep_issues
+  - action: utter_sleep_advice
+
+- rule: Handle medication queries
+  steps:
+  - intent: medication_query
+  - action: utter_medication_info
+
+- rule: Handle appointment requests
+  steps:
+  - intent: appointment_request
+  - action: utter_appointment_help
+
+- rule: Provide first aid guidance
+  steps:
+  - intent: first_aid
+  - action: utter_first_aid
+
+- rule: Provide preventive care advice
+  steps:
+  - intent: preventive_care
+  - action: utter_preventive_care
+
+- rule: Handle health tracking queries
+  steps:
+  - intent: health_tracking
+  - action: utter_health_tracking
+
+- rule: Handle women's health queries
+  steps:
+  - intent: women_health
+  - action: utter_women_health
+
+- rule: Handle men's health queries
+  steps:
+  - intent: men_health
+  - action: utter_men_health
+
+- rule: Handle child health queries
+  steps:
+  - intent: child_health
+  - action: utter_child_health
+
+- rule: Handle elderly health queries
+  steps:
+  - intent: elderly_health
+  - action: utter_elderly_health
+

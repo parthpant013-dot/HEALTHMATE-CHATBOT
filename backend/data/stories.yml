@@ -1,0 +1,275 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: mood unhappy direct response
+  steps:
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+
+- story: mood great direct response
+  steps:
+  - intent: mood_great
+  - action: utter_happy
+
+- story: headache standalone
+  steps:
+  - intent: symptom_headache
+  - action: utter_headache_advice
+
+- story: fever consultation
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: symptom_fever
+  - action: utter_fever_advice
+  - intent: affirm
+  - action: utter_feel_better_soon
+
+- story: headache help
+  steps:
+  - intent: symptom_headache
+  - action: utter_headache_advice
+  - intent: affirm
+  - action: utter_additional_help
+  - intent: deny
+  - action: utter_feel_better_soon
+
+- story: cold and flu guidance
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: symptom_cold_flu
+  - action: utter_cold_flu_advice
+  - intent: affirm
+  - action: utter_rest_advice
+
+- story: diet planning conversation
+  steps:
+  - intent: diet_nutrition
+  - action: utter_diet_advice
+  - intent: affirm
+  - action: utter_nutrition_tips
+  - intent: affirm
+  - action: utter_happy_to_help
+
+- story: exercise consultation
+  steps:
+  - intent: exercise_fitness
+  - action: utter_exercise_advice
+  - intent: affirm
+  - action: utter_fitness_encouragement
+  - intent: mood_great
+  - action: utter_happy
+
+- story: mental health support
+  steps:
+  - intent: mental_health
+  - action: utter_mental_health_support
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - intent: affirm
+  - action: utter_mental_health_resources
+
+- story: sleep problems discussion
+  steps:
+  - intent: sleep_issues
+  - action: utter_sleep_advice
+  - intent: affirm
+  - action: utter_sleep_tips
+  - intent: affirm
+  - action: utter_good_night_wish
+
+- story: emergency situation
+  steps:
+  - intent: emergency_help
+  - action: utter_emergency
+  - intent: affirm
+  - action: utter_emergency_contacts
+
+- story: medication inquiry
+  steps:
+  - intent: medication_query
+  - action: utter_medication_info
+  - intent: affirm
+  - action: utter_consult_doctor
+  - intent: affirm
+  - action: utter_safety_first
+
+- story: appointment booking flow
+  steps:
+  - intent: appointment_request
+  - action: utter_appointment_help
+  - intent: affirm
+  - action: utter_doctor_recommendation
+  - intent: affirm
+  - action: utter_appointment_success
+
+- story: stomach issues consultation
+  steps:
+  - intent: symptom_stomach
+  - action: utter_stomach_advice
+  - intent: deny
+  - action: utter_alternative_stomach_help
+  - intent: affirm
+  - action: utter_feel_better_soon
+
+- story: first aid guidance
+  steps:
+  - intent: first_aid
+  - action: utter_first_aid
+  - intent: affirm
+  - action: utter_first_aid_steps
+  - intent: affirm
+  - action: utter_safety_reminder
+
+- story: preventive health discussion
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: preventive_care
+  - action: utter_preventive_care
+  - intent: affirm
+  - action: utter_wellness_tips
+
+- story: health tracking setup
+  steps:
+  - intent: health_tracking
+  - action: utter_health_tracking
+  - intent: affirm
+  - action: utter_tracking_benefits
+  - intent: mood_great
+  - action: utter_happy
+
+- story: women's health consultation
+  steps:
+  - intent: women_health
+  - action: utter_women_health
+  - intent: affirm
+  - action: utter_women_health_tips
+  - intent: affirm
+  - action: utter_supportive_care
+
+- story: men's health consultation
+  steps:
+  - intent: men_health
+  - action: utter_men_health
+  - intent: affirm
+  - action: utter_men_health_tips
+  - intent: affirm
+  - action: utter_health_encouragement
+
+- story: child health inquiry
+  steps:
+  - intent: child_health
+  - action: utter_child_health
+  - intent: affirm
+  - action: utter_pediatric_advice
+  - intent: affirm
+  - action: utter_child_care_support
+
+- story: elderly care discussion
+  steps:
+  - intent: elderly_health
+  - action: utter_elderly_health
+  - intent: affirm
+  - action: utter_senior_care_tips
+  - intent: affirm
+  - action: utter_compassionate_care
+
+- story: bot identification
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: affirm
+  - action: utter_bot_capabilities
+
+- story: health emergency with follow-up
+  steps:
+  - intent: emergency_help
+  - action: utter_emergency
+  - intent: deny
+  - action: utter_non_emergency_help
+  - intent: affirm
+  - action: utter_general_health_advice
+
+- story: multiple symptoms consultation
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: symptom_fever
+  - action: utter_fever_advice
+  - intent: symptom_headache
+  - action: utter_multiple_symptoms_advice
+  - intent: affirm
+  - action: utter_doctor_recommendation
+
+- story: lifestyle improvement journey
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: diet_nutrition
+  - action: utter_diet_advice
+  - intent: exercise_fitness
+  - action: utter_exercise_advice
+  - intent: mood_great
+  - action: utter_lifestyle_encouragement
+
+- story: user denies help but stays engaged
+  steps:
+  - intent: symptom_fever
+  - action: utter_fever_advice
+  - intent: deny
+  - action: utter_alternative_help
+  - intent: affirm
+  - action: utter_personalized_advice
+
+- story: complete health checkup conversation
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: preventive_care
+  - action: utter_preventive_care
+  - intent: appointment_request
+  - action: utter_appointment_help
+  - intent: affirm
+  - action: utter_checkup_importance
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: general affirmation
+  steps:
+  - intent: affirm
+  - action: utter_affirm_response
+
+- story: general denial
+  steps:
+  - intent: deny
+  - action: utter_deny_response

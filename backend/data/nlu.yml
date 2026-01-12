@@ -1,0 +1,329 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+
+
+# Health-related intents for HealthMate
+
+- intent: symptom_fever
+  examples: |
+    - I have a fever
+    - I'm running a temperature
+    - I feel hot
+    - my body temperature is high
+    - I have high fever
+    - fever symptoms
+    - what to do for fever
+    - how to reduce fever
+    - I'm burning up
+    - I have a high temperature
+
+- intent: symptom_headache
+  examples: |
+    - I have a headache
+    - my head hurts
+    - I have a migraine
+    - head pain
+    - severe headache
+    - what helps with headaches
+    - headache remedies
+    - my head is pounding
+    - I have head pain
+    - tension headache
+
+- intent: symptom_cold_flu
+  examples: |
+    - I have a cold
+    - I think I have the flu
+    - I'm sneezing a lot
+    - runny nose
+    - stuffy nose
+    - I have flu symptoms
+    - cold and cough
+    - sore throat
+    - I'm congested
+    - flu remedies
+
+- intent: symptom_stomach
+  examples: |
+    - stomach ache
+    - my stomach hurts
+    - I have stomach pain
+    - nausea
+    - I feel sick to my stomach
+    - stomach problems
+    - digestive issues
+    - upset stomach
+    - stomach cramps
+    - indigestion
+
+- intent: diet_nutrition
+  examples: |
+    - what should I eat
+    - healthy diet plan
+    - nutrition advice
+    - meal planning
+    - healthy recipes
+    - weight loss diet
+    - balanced diet
+    - what foods are good for me
+    - dietary recommendations
+    - nutrition tips
+
+- intent: exercise_fitness
+  examples: |
+    - exercise routine
+    - workout plan
+    - how to stay fit
+    - fitness tips
+    - what exercises should I do
+    - gym workout
+    - home exercises
+    - cardio workout
+    - strength training
+    - fitness advice
+
+- intent: mental_health
+  examples: |
+    - I feel stressed
+    - anxiety help
+    - I'm feeling anxious
+    - stress management
+    - I'm depressed
+    - mental health support
+    - feeling overwhelmed
+    - panic attack
+    - how to relax
+    - coping strategies
+
+- intent: sleep_issues
+  examples: |
+    - I can't sleep
+    - insomnia help
+    - sleep problems
+    - trouble sleeping
+    - how to sleep better
+    - sleep tips
+    - I'm having nightmares
+    - sleep disorders
+    - can't fall asleep
+    - sleep advice
+
+- intent: medication_query
+  examples: |
+    - medication information
+    - drug interactions
+    - side effects
+    - when to take medicine
+    - medication reminders
+    - prescription help
+    - over the counter medicine
+    - medicine dosage
+    - drug allergies
+    - medication advice
+
+- intent: emergency_help
+  examples: |
+    - this is an emergency
+    - I need immediate help
+    - call ambulance
+    - urgent medical help
+    - emergency situation
+    - I need a doctor now
+    - serious health problem
+    - medical emergency
+    - help me please
+    - critical situation
+
+- intent: appointment_request
+  examples: |
+    - book an appointment
+    - schedule doctor visit
+    - I need to see a doctor
+    - appointment booking
+    - when can I see a doctor
+    - find a doctor
+    - medical appointment
+    - book consultation
+    - schedule checkup
+    - doctor availability
+
+- intent: health_tracking
+  examples: |
+    - track my health
+    - monitor symptoms
+    - health records
+    - track my weight
+    - blood pressure monitoring
+    - health metrics
+    - vital signs
+    - health statistics
+    - monitor my health
+    - track progress
+
+- intent: first_aid
+  examples: |
+    - first aid help
+    - what to do for cuts
+    - burn treatment
+    - wound care
+    - basic first aid
+    - emergency care
+    - injury help
+    - accident care
+    - immediate treatment
+    - first aid tips
+
+- intent: preventive_care
+  examples: |
+    - how to prevent illness
+    - preventive health measures
+    - health maintenance
+    - wellness tips
+    - stay healthy
+    - prevent disease
+    - health prevention
+    - immunity boost
+    - healthy lifestyle
+    - disease prevention
+
+- intent: women_health
+  examples: |
+    - women's health
+    - pregnancy questions
+    - menstrual health
+    - reproductive health
+    - women's wellness
+    - feminine health
+    - pregnancy symptoms
+    - maternal health
+    - women's issues
+    - gynecological health
+
+- intent: men_health
+  examples: |
+    - men's health
+    - men's wellness
+    - male health issues
+    - men's fitness
+    - prostate health
+    - men's mental health
+    - masculine health
+    - men's nutrition
+    - male wellness
+    - men's healthcare
+
+- intent: child_health
+  examples: |
+    - child health
+    - pediatric care
+    - kids health
+    - children's wellness
+    - baby health
+    - child development
+    - pediatric questions
+    - infant care
+    - child nutrition
+    - kids healthcare
+
+- intent: elderly_health
+  examples: |
+    - senior health
+    - elderly care
+    - aging health issues
+    - geriatric care
+    - senior wellness
+    - elderly nutrition
+    - age-related health
+    - senior fitness
+    - elderly healthcare
+    - aging concerns

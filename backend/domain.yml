@@ -1,0 +1,247 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - symptom_fever
+  - symptom_headache
+  - symptom_cold_flu
+  - symptom_stomach
+  - diet_nutrition
+  - exercise_fitness
+  - mental_health
+  - sleep_issues
+  - medication_query
+  - emergency_help
+  - appointment_request
+  - health_tracking
+  - first_aid
+  - preventive_care
+  - women_health
+  - men_health
+  - child_health
+  - elderly_health
+
+responses:
+  utter_greet:
+  - text: "👋 Hi! I'm HealthMate, your AI health assistant. How can I help you today?"
+  - text: "Hello! Welcome to HealthMate. What health questions can I assist you with?"
+  - text: "Hi there! I'm here to help with your health and wellness needs. What's on your mind?"
+
+  utter_goodbye:
+  - text: "Goodbye! Take care of your health. Feel free to come back anytime! 💚"
+  - text: "Bye! Remember to stay healthy and hydrated. See you soon! 👋"
+  - text: "Take care! Wishing you good health always. Don't hesitate to return if you need help! 🌟"
+
+  utter_iamabot:
+  - text: "I'm HealthMate, your AI health assistant! I'm here to provide health information and guidance. 🤖💚"
+  - text: "Yes, I'm an AI bot designed to help with health and wellness questions. How can I assist you today?"
+
+  utter_happy:
+  - text: "That's wonderful to hear! 😊 Maintaining a positive mood is great for your overall health!"
+  - text: "I'm so glad you're feeling great! A positive mindset contributes to better physical health too! 🌟"
+
+  utter_cheer_up:
+  - text: "I'm sorry to hear you're not feeling well emotionally. Remember, it's okay to have difficult days. Consider talking to someone you trust or a mental health professional. 💙"
+  - text: "I understand you're going through a tough time. Taking care of your mental health is just as important as physical health. Would you like some coping strategies?"
+
+  utter_did_that_help:
+  - text: "Did that information help you feel better?"
+  - text: "Was that advice helpful for your situation?"
+
+  utter_fever_advice:
+  - text: "For fever management: Stay hydrated with plenty of fluids, rest in a cool environment, and consider over-the-counter fever reducers if appropriate. Consult a doctor if fever exceeds 101°F (38.3°C) or persists for more than 3 days. 🌡️"
+  - text: "Fever care tips: Rest well, drink lots of water, use cool compresses, and monitor your temperature. Seek medical attention if symptoms worsen or fever is very high."
+
+  utter_headache_advice:
+  - text: "For headache relief: Try resting in a quiet, dark room, stay hydrated, apply a cold or warm compress to your head/neck, and consider gentle neck stretches. Persistent or severe headaches should be evaluated by a healthcare provider. 🧠"
+  - text: "Headache management: Ensure you're well-hydrated, get adequate sleep, reduce screen time, and try relaxation techniques. If headaches are frequent or severe, consult a doctor."
+
+  utter_cold_flu_advice:
+  - text: "For cold/flu symptoms: Get plenty of rest, stay hydrated, use a humidifier, consume warm liquids like tea or soup, and consider throat lozenges. See a doctor if symptoms worsen or persist beyond 7-10 days. 🤧"
+  - text: "Cold and flu care: Rest is crucial, drink warm fluids, gargle with salt water for sore throat, and boost your immune system with vitamin C-rich foods."
+
+  utter_stomach_advice:
+  - text: "For stomach issues: Try the BRAT diet (bananas, rice, applesauce, toast), stay hydrated with clear fluids, avoid dairy and fatty foods temporarily. If pain is severe or persistent, consult a healthcare provider. 🍌"
+  - text: "Stomach care: Eat bland, easy-to-digest foods, sip clear broths, avoid spicy or acidic foods, and rest. Seek medical attention if you have severe pain or blood in stool."
+
+  utter_diet_advice:
+  - text: "For a healthy diet: Focus on balanced meals with plenty of fruits, vegetables, whole grains, lean proteins, and healthy fats. Stay hydrated, limit processed foods, and maintain regular meal times. 🥗"
+  - text: "Nutrition guidance: Aim for colorful plates with variety, control portion sizes, choose whole foods over processed ones, and don't skip meals."
+
+  utter_exercise_advice:
+  - text: "For fitness: Aim for at least 150 minutes of moderate aerobic activity weekly, include strength training twice a week, start gradually if you're new to exercise, and always listen to your body. 💪"
+  - text: "Exercise tips: Find activities you enjoy, start slowly and build up intensity, include both cardio and strength training, and make it a regular habit."
+
+  utter_mental_health_support:
+  - text: "Mental health is crucial: Practice deep breathing, try meditation or mindfulness, maintain regular exercise, ensure adequate sleep, and don't hesitate to seek professional help if needed. You're not alone. 🧘‍♀️"
+  - text: "For mental wellness: Connect with supportive people, engage in hobbies you enjoy, practice stress management techniques, and remember that seeking help is a sign of strength."
+
+  utter_sleep_advice:
+  - text: "For better sleep: Maintain a consistent sleep schedule, create a relaxing bedtime routine, keep your bedroom cool and dark, limit screen time before bed, and aim for 7-9 hours nightly. 😴"
+  - text: "Sleep hygiene tips: Avoid caffeine late in the day, exercise regularly (but not close to bedtime), keep a sleep diary, and create a comfortable sleep environment."
+
+  utter_medication_info:
+  - text: "Regarding medications: Always follow your doctor's instructions, take medications as prescribed, be aware of potential side effects, and inform your healthcare provider about all medications you're taking. Never stop prescribed medications without consulting your doctor first. 💊"
+  - text: "Medication safety: Keep a list of all your medications, check for interactions, store medications properly, and always consult healthcare professionals for medication questions."
+
+  utter_emergency:
+  - text: "🚨 If this is a medical emergency, please call emergency services immediately (911 in US, 102 in India, or your local emergency number). Don't delay seeking immediate medical attention for serious symptoms."
+  - text: "⚠️ For medical emergencies: Call emergency services right away! I can provide general health information, but emergencies require immediate professional medical care."
+
+  utter_appointment_help:
+  - text: "To schedule a medical appointment: Contact your primary care physician's office, use their online booking system if available, or call local healthcare providers. For urgent but non-emergency issues, consider urgent care clinics. 📅"
+  - text: "Booking appointments: Prepare your symptoms and questions beforehand, have your insurance information ready, and don't hesitate to ask for the earliest available appointment if it's urgent."
+
+  utter_first_aid:
+  - text: "Basic first aid: For cuts - clean and cover with bandage; For burns - cool with water, don't use ice; For bleeding - apply direct pressure. For serious injuries, seek immediate medical attention. 🩹"
+  - text: "First aid essentials: Stay calm, assess the situation, call for help if needed, and only provide care within your skill level. Always prioritize safety first."
+
+  utter_preventive_care:
+  - text: "Preventive health measures: Get regular check-ups, stay up-to-date with vaccinations, maintain a healthy lifestyle, know your family medical history, and screen for age-appropriate health conditions. 🛡️"
+  - text: "Stay healthy: Eat nutritiously, exercise regularly, get adequate sleep, manage stress, avoid smoking, limit alcohol, and maintain social connections."
+
+  utter_health_tracking:
+  - text: "Health tracking benefits: Monitor vital signs, track symptoms, record medications, note dietary habits, and observe patterns. This information is valuable for healthcare providers. 📊"
+  - text: "Track your health: Use apps or journals to monitor weight, blood pressure, exercise, sleep, and mood. Regular tracking helps identify trends and improvements."
+
+  utter_women_health:
+  - text: "Women's health focus: Regular gynecological exams, breast self-examinations, understanding menstrual health, pregnancy planning if applicable, and bone health are important. Consult with healthcare providers for personalized advice. 👩‍⚕️"
+  - text: "Women's wellness: Pay attention to hormonal health, maintain calcium intake for bone strength, practice safe health habits, and don't ignore unusual symptoms."
+
+  utter_men_health:
+  - text: "Men's health priorities: Regular health screenings, heart health monitoring, prostate health awareness, mental health attention, and maintaining healthy lifestyle habits are crucial. 👨‍⚕️"
+  - text: "Men's wellness: Focus on cardiovascular health, maintain healthy weight, exercise regularly, manage stress, and don't avoid medical check-ups."
+
+  utter_child_health:
+  - text: "Child healthcare: Ensure regular pediatric check-ups, stay current with vaccinations, promote healthy eating habits, encourage physical activity, and monitor developmental milestones. 👶"
+  - text: "Children's wellness: Provide balanced nutrition, limit screen time, ensure adequate sleep, teach good hygiene habits, and create a safe environment."
+
+  utter_elderly_health:
+  - text: "Senior health care: Focus on fall prevention, medication management, regular health screenings, maintaining social connections, and staying physically and mentally active within abilities. 👴👵"
+  - text: "Elderly wellness: Prioritize bone health, manage chronic conditions, stay socially engaged, maintain independence safely, and have regular medical monitoring."
+
+  # Additional supporting responses
+  utter_feel_better_soon:
+  - text: "I hope you feel better soon! Remember to rest and take care of yourself. 💚"
+  - text: "Wishing you a speedy recovery! Don't hesitate to seek medical attention if symptoms worsen."
+
+  utter_additional_help:
+  - text: "Is there anything else I can help you with regarding your health?"
+  - text: "Do you need any additional health information or guidance?"
+
+  utter_rest_advice:
+  - text: "Rest is one of the best medicines. Make sure to get plenty of sleep and take it easy. 😴"
+
+  utter_nutrition_tips:
+  - text: "Remember: variety is key in nutrition. Try to include different colored fruits and vegetables in your meals! 🌈"
+
+  utter_fitness_encouragement:
+  - text: "Great job on prioritizing your fitness! Consistency is more important than intensity. Keep it up! 🏃‍♂️"
+
+  utter_happy_to_help:
+  - text: "I'm always happy to help with your health questions! Stay healthy! 😊"
+
+  utter_mental_health_resources:
+  - text: "Consider reaching out to mental health professionals, support groups, or trusted friends and family. Your mental health matters! 🤗"
+
+  utter_sleep_tips:
+  - text: "Good sleep hygiene makes a huge difference. Sweet dreams and better health ahead! 🌙"
+
+  utter_good_night_wish:
+  - text: "Sleep well and wake up refreshed! Good night! 🌙✨"
+
+  utter_emergency_contacts:
+  - text: "Keep emergency numbers handy: 911 (US), 102 (India), or your local emergency services. Stay safe! 🚨"
+
+  utter_consult_doctor:
+  - text: "When in doubt, always consult with a healthcare professional. They know your medical history best! 👩‍⚕️👨‍⚕️"
+
+  utter_safety_first:
+  - text: "Your safety and health come first. Never hesitate to seek professional medical advice! ⚡"
+
+  utter_doctor_recommendation:
+  - text: "I recommend scheduling an appointment with a healthcare provider for proper evaluation and treatment. 🏥"
+
+  utter_appointment_success:
+  - text: "Excellent! Taking charge of your health by scheduling appointments is a great step forward! 📅✅"
+
+  utter_affirm_response:
+  - text: "Great! I'm glad I could help you."
+  - text: "Wonderful! Is there anything else you'd like to know?"
+
+  utter_deny_response:
+  - text: "No worries! Let me know if you need help with anything else."
+  - text: "That's okay! I'm here whenever you need health guidance."
+
+  utter_alternative_stomach_help:
+  - text: "Alternative stomach remedies: Try ginger tea, avoid lying down after eating, and eat smaller, more frequent meals."
+
+  utter_first_aid_steps:
+  - text: "First aid steps: 1) Ensure safety 2) Assess the situation 3) Call for help if needed 4) Provide appropriate care 5) Monitor the person"
+
+  utter_safety_reminder:
+  - text: "Remember: Your safety comes first. If you're unsure about providing first aid, wait for professional help! 🛡️"
+
+  utter_wellness_tips:
+  - text: "Wellness tip: Small, consistent healthy choices every day add up to big improvements in your overall health! 🌟"
+
+  utter_tracking_benefits:
+  - text: "Health tracking helps you and your doctor identify patterns, monitor progress, and make informed health decisions! 📈"
+
+  utter_women_health_tips:
+  - text: "Women's health tip: Listen to your body and don't ignore changes. Regular self-examinations and check-ups are important! 💪"
+
+  utter_supportive_care:
+  - text: "Remember, taking care of your health is an act of self-love. You deserve to feel your best! 💖"
+
+  utter_men_health_tips:
+  - text: "Men's health tip: Don't tough it out alone. Regular check-ups and open communication about health concerns are signs of strength! 💪"
+
+  utter_health_encouragement:
+  - text: "Taking an active role in your health is admirable! Keep up the great work! 🌟"
+
+  utter_pediatric_advice:
+  - text: "For children's health concerns, always consult with a pediatrician. They specialize in growing bodies and minds! 👨‍⚕️👶"
+
+  utter_child_care_support:
+  - text: "Caring for a child's health can feel overwhelming, but you're doing great by seeking information! Keep it up! 🌈"
+
+  utter_senior_care_tips:
+  - text: "Senior care tip: Regular medical check-ups become even more important with age. Prevention is key! 👴👵"
+
+  utter_compassionate_care:
+  - text: "Caring for elderly health requires patience and compassion. You're making a difference! 💙"
+
+  utter_bot_capabilities:
+  - text: "I can help with general health information, symptom guidance, wellness tips, and direct you to appropriate care when needed! 🤖💚"
+
+  utter_non_emergency_help:
+  - text: "For non-emergency health concerns, I can provide general guidance, but always consult healthcare professionals for proper diagnosis and treatment."
+
+  utter_general_health_advice:
+  - text: "General health advice: Eat well, exercise regularly, get enough sleep, manage stress, and maintain regular check-ups with healthcare providers! 🌟"
+
+  utter_multiple_symptoms_advice:
+  - text: "When experiencing multiple symptoms, it's especially important to consult a healthcare provider for proper evaluation and coordinated care."
+
+  utter_lifestyle_encouragement:
+  - text: "You're on a great path to better health! Combining good nutrition and exercise creates a strong foundation for wellness! 🎯"
+
+  utter_alternative_help:
+  - text: "That's okay! Let me offer some alternative suggestions that might be more suitable for your situation."
+
+  utter_personalized_advice:
+  - text: "Everyone's health journey is unique. I'm here to provide information that can help you make informed decisions about your care! 🎯"
+
+  utter_checkup_importance:
+  - text: "Regular health checkups are investments in your future self. Early detection and prevention can make all the difference! 🏥✨"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
