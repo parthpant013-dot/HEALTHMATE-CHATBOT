@@ -108,7 +108,7 @@ To understand this project, look at these core files:
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/healthmate-chatbot.git
+git clone https://github.com/parthpant013-dot/healthmate-chatbot.git
 cd healthmate-chatbot
 ```
 
