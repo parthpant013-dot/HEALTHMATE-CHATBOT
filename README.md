@@ -14,7 +14,6 @@ HealthMate is a full-stack AI healthcare chatbot built using **Rasa** for natura
 -  Multi-language UI support (English / Hindi)
 -  Real-time chat via REST API
 -  Context-aware conversations using session IDs
--  Clean project structure suitable for GitHub & internships
 
 ---
 
